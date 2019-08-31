@@ -1,0 +1,28 @@
+{
+  "name": "xdde",
+  "version": "0.0.1",
+  "description": "XanZhu Development and Deployment Engine.",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "surge --project /_site --domain xanzhu.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BhuZha/XZ.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BhuZha/XZ/issues"
+  },
+  "homepage": "https://github.com/BhuZha/XZ#readme",
+  "devDependencies": {
+    "git-scripts": "^0.2.1",
+    "surge": "^0.21.3"
+  },
+  "git": {
+    "scripts": {
+      "pre-push": "npm run deploy"
+    }
+  }
+}
