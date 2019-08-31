@@ -1,7 +1,7 @@
 {
   "name": "xdde",
   "version": "0.0.1",
-  "description": "XanZhu Development and Deployment Engine.",
+  "description": "XanZhu Development and Deployment Engine",
   "main": "index.js",
   "scripts": {
     "deploy": "surge --project ./_site --domain xanzhu.com"
