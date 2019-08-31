@@ -4,7 +4,7 @@
   "description": "XanZhu Development and Deployment Engine.",
   "main": "index.js",
   "scripts": {
-    "deploy": "surge --project /_site --domain xanzhu.com"
+    "deploy": "surge --project ./_site --domain xanzhu.com"
   },
   "repository": {
     "type": "git",
