@@ -22,7 +22,7 @@
   },
   "git": {
     "scripts": {
-      "pre-push": "npm run deploy"
+      "prepush": "npm run deploy"
     }
   }
 }
