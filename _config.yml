@@ -1,3 +1,6 @@
 url: "https://xanzhu.com"
 baseurl: "" 
 title: "xanzhu"
+
+exclude: ['_site', 'node_modules', 'vendor', ]
+include: ['_pages']
