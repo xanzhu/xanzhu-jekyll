@@ -3,9 +3,9 @@ rvm:
   - 2.6.2
 
 before_script:
- - chmod +x ./script/build
+ - chmod +x ./script/build.sh
 
-script: ./script/build
+script: ./script/build.sh
 
 deploy:
   provider: surge
