@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/BhuZha/XZ#readme",
   "devDependencies": {
-    "git-scripts": "^0.2.1",
     "surge": "^0.21.3"
   }
 }

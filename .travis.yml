@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-  - 2.6.2
+  - 2.6.4
 
 before_install:
   - chmod +x ./scripts/build.sh
@@ -10,7 +10,6 @@ script: ./scripts/build.sh
 deploy:
   provider: surge
   project: ./_site
-  domain: xanzhu.com
 
 
 branches:
