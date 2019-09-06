@@ -10,7 +10,7 @@ script: ./scripts/build.sh
 deploy:
   provider: surge
   project: ./_site
-
+  domain: xanzhu.com
 
 branches:
   only:
