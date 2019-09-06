@@ -3,13 +3,13 @@ rvm:
   - 2.6.2
 
 before_install:
-  - chmod +x /scripts/build.sh
+  - chmod +x ./scripts/build.sh
 
-script: /scripts/build.sh
+script: ./scripts/build.sh
 
 deploy:
   provider: surge
-  project: /_site
+  project: ./_site
   domain: xanzhu.com
 
 
