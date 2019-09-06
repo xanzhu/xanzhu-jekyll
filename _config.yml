@@ -7,10 +7,14 @@ exclude:
   - Gemfile.lock
   - vendor
   - node_modules
-  - .jekyll-cache
-  - .sass-cache
   - _site
   - CNAME
   - package.json
   - package-lock.json
   - scripts
+
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-sitemap
