@@ -2,5 +2,14 @@ url: "https://xanzhu.com"
 baseurl: "" 
 title: "xanzhu"
 
-exclude: ['_site', 'node_modules', 'vendor', ]
-include: ['_pages']
+exclude: 
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules
+  - .jekyll-cache
+  - .sass-cache
+  - _site
+  - CNAME
+  - package.json
+  - package-lock.json
