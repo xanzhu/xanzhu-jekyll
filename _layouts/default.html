@@ -3,7 +3,7 @@
 <html lang="{{ site.lang | default: 'en=NZ' }}">
   {% if page.code == 503 %}
   {% include 503.html %}
-  {% endif %}
+  {% else %}
   <head>
     {%include head.html %}
   </head>
@@ -11,3 +11,4 @@
     {{ content}}
   </body>
 </html>
+{% endif %}
