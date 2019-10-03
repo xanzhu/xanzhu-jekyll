@@ -1,5 +1,10 @@
+---
+---
 <!DOCTYPE html>
 <html>
+  {% if site.code or page.code == 503 %}
+  {% include 503.html %}
+  {% else %}
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -18,3 +23,4 @@
 </div>
 </body>
 </html>
+{%endif%}

@@ -19,3 +19,6 @@ sass:
 
 plugins:
   - jekyll-sitemap
+
+# Let users know whats happening site wide. 
+code: 503
