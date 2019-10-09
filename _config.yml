@@ -2,6 +2,11 @@ url: "https://xanzhu.com"
 baseurl: "" 
 title: "xanzhu"
 
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM  
+
 exclude: 
   - Gemfile
   - Gemfile.lock
@@ -12,6 +17,10 @@ exclude:
   - package.json
   - package-lock.json
   - scripts
+  - _All-Snippets
+
+include:
+  - _pages
 
 sass:
   style: compressed
