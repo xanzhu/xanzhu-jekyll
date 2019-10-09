@@ -7,6 +7,7 @@ excerpt: Information about updates and changes towards our domain.
 
 # XANZHU CHANGLOG
 Information about updates and changes towards this domain. CDN changelog listed until we move that over to our subdomain directly.  
+Updated every so often (Weekly)
 
 ## 0.0.3 - October 10th 2019
 ### Added
@@ -15,6 +16,9 @@ Information about updates and changes towards this domain. CDN changelog listed 
 - Default Jekyll markdown settings to config.yml (Testing)
 - New head file for posts (Pages)
 - More internal scripts for xdde to make things easier
+
+### Fixed
+- Fixed favicon url 
 
 ----
 
