@@ -15,8 +15,8 @@ jobs:
           name: Bundler Gem
           command: gem install bundler -v 2.0.2
       - run:
-          name: Bundle Install
-          command: bundle check || bundle install
+          name: Bundle
+          command: bundle install
       - save_cache:
           key: rubygems-v1-{{ checksum "Gemfile.lock" }}
           paths:
@@ -53,3 +53,9 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
       - deploy:
           command: surge --project ./_site --domain xanzhu.com
+workflows:
+  version: 2
+  workflow:
+    jobs:
+    - build
+    - node
