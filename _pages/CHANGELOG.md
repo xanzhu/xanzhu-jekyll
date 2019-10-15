@@ -9,6 +9,9 @@ excerpt: Information about updates and changes towards our domain.
 Information about updates and changes towards this domain. CDN changelog listed until we move that over to our subdomain directly.  
 Updated every so often (Weekly)
 
+## 0.3 - Preview 
+- Testing CircleCI Intergration!
+
 ## 0.0.3 - October 10th 2019
 ### Added
 - Markdown support (Beta)
