@@ -36,19 +36,24 @@ jobs:
           root: ./
           paths:
             - _site
-deployment:
-  production:
-    branch: ci
-    commands:
-      - surge --project ./_site --domain xanzhu.com
-workflows:
-  version: 2
-  test-deploy:
-    jobs:
-      - build
+  release:
+    docker:
+      - image: circleci/node:12.12
+    working_directory: ~repo
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "package.json" }}
+          - v1-dependencies-
+      - run: 
+          name: Package update
+          command: npm install 
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
       - deploy:
-          requires:
-            - build
-          filters:
-            branches:
-              only: master
+          branch: ci
+          commands:
+            - surge --project ./_site --domain xanzhu.com
