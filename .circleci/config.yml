@@ -1,17 +1,8 @@
-machine:
-  environment:
-    NOKOGIRI_USE_SYSTEM_LIBRARIES: true # speeds up installation of html-proofer
-
-dependencies:
-  post:
-    - bundle exec jekyll build
-
-test:
-  post:
-    - bundle exec htmlproofer ./_site --allow-hash-href --check-favicon --check-html --disable-external
-
-deployment:
-  production:
-    branch: ci
-    commands:
-      - surge --project ./_site --domain xanzhu.com
+ version: 2
+ jobs:
+   build:
+     docker:
+       - image: circleci/ruby:2.4.1
+     steps:
+       - checkout
+       - run: echo "A first hello"
