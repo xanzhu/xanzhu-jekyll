@@ -11,9 +11,6 @@ jobs:
           keys:
             - rubygems-v1-{{ checksum "Gemfile.lock" }}
             - rubygems-v1-fallback
-      - run: 
-          name: Bundler Gem
-          command: gem install bundler -v 2.0.2
       - run:
           name: Bundle
           command: bundle install
@@ -36,7 +33,7 @@ jobs:
           root: ./
           paths:
             - _site
-  ndeploy:
+  deploy:
     docker:
       - image: circleci/node:12.12
     working_directory: ~/repo
