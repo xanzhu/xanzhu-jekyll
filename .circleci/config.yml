@@ -36,9 +36,9 @@ jobs:
           root: ./
           paths:
             - _site
-  node:
+  ndeploy:
     docker:
-      - image: circleci/node:12.11
+      - image: circleci/node:12.12
     working_directory: ~/repo
     steps:
       - checkout
@@ -46,7 +46,7 @@ jobs:
           keys:
           - v1-dependencies-{{ checksum "package.json" }}
           - v1-dependencies-
-      - run: npm install
+      - run: npm install surge
       - save_cache:
           paths:
             - node_modules
@@ -58,4 +58,6 @@ workflows:
   workflow:
     jobs:
     - build
-    - node
+    - deploy:
+        requires:
+            - build
