@@ -11,6 +11,9 @@ jobs:
           keys:
             - rubygems-v1-{{ checksum "Gemfile.lock" }}
             - rubygems-v1-fallback
+      - run: 
+          name: Bundler Gem
+          run: gem install bundler -v 2.0.2
       - run:
           name: Bundle Install
           command: bundle check || bundle install
