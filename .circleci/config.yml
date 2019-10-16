@@ -4,6 +4,38 @@
 #
 version: 2
 jobs:
+  jekyll:
+    docker:
+      - image: circleci/ruby:2.6.5
+    environment:
+      BUNDLE_PATH: ~/repo/vendor/bundle
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - rubygems-v1-{{ checksum "Gemfile.lock" }}
+            - rubygems-v1-fallback
+      - run: gem install bundler -v 2.0.2
+      - run: bundle install
+      - save_cache:
+          key: rubygems-v1-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
+      - run:
+          name: Jekyll build
+          command: bundle exec jekyll build
+      - run:
+          name: HTMLProofer tests
+          command: |
+            bundle exec htmlproofer ./_site \
+              --allow-hash-href \
+              --check-favicon  \
+              --check-html \
+              --disable-external
+      - persist_to_workspace:
+          root: ./
+          paths:
+            - _site
   build-job:
     docker:
       # specify the version you desire here
@@ -72,7 +104,10 @@ workflows:
   version: 2
   production:
     jobs:
-      - build-job
+      - jekyll
+      - build-job:
+          requires:
+            - jekyll
       - deploy-job:
           requires:
             - build-job
