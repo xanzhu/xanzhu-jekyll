@@ -23,9 +23,9 @@ jobs:
             - rubygems-v1-{{ checksum "Gemfile.lock" }}
             - rubygems-v1-
       - run: gem install bundler
-      - run: bundle install
+      - run: bundle check || bundle install
       - save_cache:
-          key: rubygems-v1-{{ checksum "Gemfile.lock" }}
+          key: rubygems-v1.1-{{ checksum "Gemfile.lock" }}
           paths:
             - vendor/bundle
       - run:
