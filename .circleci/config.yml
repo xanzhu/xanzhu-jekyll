@@ -40,7 +40,7 @@ jobs:
               --check-html \
               --disable-external
       - persist_to_workspace:
-          root: /
+          root: ./
           paths:
             - _site
   deploy-job:
@@ -73,7 +73,7 @@ jobs:
             key: v1-dependencies-{{ checksum "package.json" }}
         
         - attach_workspace:
-            at: /_site
+            at: ./_site
         
         # deploy the build
         - run: yarn run deploy:ci
