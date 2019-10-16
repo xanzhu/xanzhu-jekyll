@@ -73,7 +73,7 @@ jobs:
             key: v1-dependencies-{{ checksum "package.json" }}
 
         # deploy the build
-        - run: yarn run deploy
+        - run: surge --project ~repo/_site --domain xanzhu.com
 
 workflows:
   version: 2
