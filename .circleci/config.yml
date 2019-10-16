@@ -73,10 +73,10 @@ jobs:
             key: v1-dependencies-{{ checksum "package.json" }}
         
         - attach_workspace:
-            at: ./_site
+            at: ./
         
         # deploy the build
-        - run: yarn run deploy:ci
+        - run: yarn run deploy
 
 workflows:
   version: 2
