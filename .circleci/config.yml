@@ -75,7 +75,7 @@ jobs:
         - attach_workspace:
             at: ./
         
-        # deploy the build
+        # deploy the project
         - run: yarn run deploy
 
 workflows:
