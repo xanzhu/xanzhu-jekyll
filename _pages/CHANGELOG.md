@@ -6,13 +6,15 @@ excerpt: Information about updates and changes towards our domain.
 ---
 
 # XANZHU CHANGLOG
-Information about updates and changes towards this domain. CDN changelog listed until we move that over to our subdomain directly.  
-Updated every so often (Weekly)
+Information about updates and changes towards this domain. 
+CDN changelog listed until we move that over to our subdomain directly. 
 
-## 0.3 - Preview / v2
-- Testing CircleCI Intergration!
+## 0.4 - October 17th 2019 (Beta)
+### Changed
+- XDDE no longer uses TravisCI
+- Package manager now handled through yarn
 
-## 0.0.3 - October 10th 2019
+## 0.3 - October 10th 2019
 ### Added
 - Markdown support (Beta)
 - New _pages directory within jekyll
