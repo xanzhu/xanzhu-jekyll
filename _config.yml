@@ -10,12 +10,12 @@ kramdown:
 exclude: 
   - Gemfile
   - Gemfile.lock
+  - yarn.lock
   - vendor
   - node_modules
   - _site
   - CNAME
   - package.json
-  - package-lock.json
   - scripts
   - _All-Snippets
 

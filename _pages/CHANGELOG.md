@@ -7,12 +7,20 @@ excerpt: Information about updates and changes towards our domain.
 
 # XANZHU CHANGLOG
 Information about updates and changes towards this domain. 
+Currently this project is being developed, the version control follows as 0.Patch
 CDN changelog listed until we move that over to our subdomain directly. 
 
-## 0.4 - October 17th 2019 (Beta)
+## 0.4 - October 17th 2019
+### Added 
+- CircleCI support
+- Yarn for internal developement
+
 ### Changed
-- XDDE no longer uses TravisCI
-- Package manager now handled through yarn
+- Package manager, now using Yarn instead of npm
+
+### Deprecated
+- TravisCI support
+- npm 
 
 ## 0.3 - October 10th 2019
 ### Added

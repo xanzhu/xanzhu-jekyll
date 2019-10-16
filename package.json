@@ -1,6 +1,6 @@
 {
   "name": "xdde",
-  "version": "0.0.1",
+  "version": "0.1",
   "description": "XanZhu Development and Deployment Engine",
   "main": "index.html",
   "scripts": {
@@ -8,10 +8,10 @@
     "build": "bundle exec jekyll build",
     "deploy": "surge --project ./_site --domain xanzhu.com",
     "deploy:teardown": "surge teardown xanzhu.com",
-    "start": "bundle exec jekyll s",
-    "update:vendor": "bundle install && bundle update",
+    "update:vendor": "bundle check --path=vendor/bundle || bundle install --path=vendor/bundle",
     "clean": "bundle exec jekyll clean",
-    "update:packages": "rm -rf node_modules && npm update --save-dev && npm update --save"
+    "package:reinstall": "rm -rf node_modules && yarn upgrade --save-dev",
+    "package:update": "yarn install"
   },
   "repository": "git+https://github.com/BhuZha/XZ.git",
   "author": "BhuZha <34955679+BhuZha@users.noreply.github.com>",
