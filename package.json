@@ -7,7 +7,7 @@
     "build:server": "bundle exec jekyll server",
     "build": "bundle exec jekyll build",
     "deploy": "surge --project ./_site --domain xanzhu.com",
-    "deploy:ci": "surge --project ~repo/_site --domain xanzhu.com",
+    "deploy:ci": "surge --project /test/_site--domain xanzhu.com",
     "deploy:teardown": "surge teardown xanzhu.com",
     "start": "bundle exec jekyll s",
     "update:vendor": "bundle install && bundle update",

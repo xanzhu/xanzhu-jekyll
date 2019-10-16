@@ -21,8 +21,8 @@ jobs:
       - restore_cache:
           keys:
             - rubygems-v1-{{ checksum "Gemfile.lock" }}
-            - rubygems-v1-fallback
-      - run: gem install bundler -v 2.0.2
+            - rubygems-v1-
+      - run: gem install bundler
       - run: bundle install
       - save_cache:
           key: rubygems-v1-{{ checksum "Gemfile.lock" }}
@@ -40,7 +40,7 @@ jobs:
               --check-html \
               --disable-external
       - persist_to_workspace:
-          root: ./
+          root: /test
           paths:
             - _site
   deploy-job:
@@ -71,7 +71,10 @@ jobs:
             paths:
               - node_modules
             key: v1-dependencies-{{ checksum "package.json" }}
-
+        
+        - attach_workspace:
+            at: /test/_site
+        
         # deploy the build
         - run: yarn run deploy:ci
 
