@@ -20,8 +20,8 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - rubygems-v1-{{ checksum "Gemfile.lock" }}
-            - rubygems-v1-
+            - rubygems-v1.1-{{ checksum "Gemfile.lock" }}
+            - rubygems-v1.1-
       - run: gem install bundler
       - run: bundle check || bundle install
       - save_cache:
