@@ -82,7 +82,10 @@ workflows:
   version: 2
   production:
     jobs:
-      - build-job
+      - build-job:
+          filters:
+            branches:
+              only: ci
       - deploy-job:
           requires:
             - build-job

@@ -2,12 +2,11 @@
 layout: page
 permalink: changelog/
 title: XANZHU CHANGLOG
-excerpt: Information about updates and changes towards our domain. 
+excerpt: Information about updates and changes towards xanzhu.com
 ---
 
 # XANZHU CHANGLOG
-Information about updates and changes towards this domain. 
-Currently this project is being developed, the version control follows as 0.Patch
+Information about updates and changes towards xanzhu.com
 CDN changelog listed until we move that over to our subdomain directly. 
 
 ## 0.4 - October 17th 2019
@@ -18,9 +17,12 @@ CDN changelog listed until we move that over to our subdomain directly.
 ### Changed
 - Package manager, now using Yarn instead of npm
 
+### Fixed
+- Fixed a deployment issue which would build on all branches.
+
 ### Deprecated
 - TravisCI support
-- npm 
+- npm package manager
 
 ## 0.3 - October 10th 2019
 ### Added
