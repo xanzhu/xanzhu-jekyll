@@ -8,6 +8,7 @@ excerpt: Information about updates and changes towards xanzhu.com
 # XANZHU CHANGLOG
 Information about updates and changes towards xanzhu.com
 CDN changelog listed until we move that over to our subdomain directly. 
+Testing...
 
 ## 0.4 - October 17th 2019
 ### Added 
