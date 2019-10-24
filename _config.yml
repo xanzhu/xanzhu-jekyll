@@ -1,0 +1,33 @@
+url: "https://xanzhu.com"
+baseurl: "" 
+title: "xanzhu"
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM  
+
+exclude: 
+  - Gemfile
+  - Gemfile.lock
+  - yarn.lock
+  - vendor
+  - node_modules
+  - _site
+  - CNAME
+  - package.json
+  - scripts
+  - _All-Snippets
+
+include:
+  - _pages
+
+sass:
+  style: compressed
+  sass_dir: _sass
+
+plugins:
+  - jekyll-sitemap
+
+# Let users know whats happening site wide. 
+code: 503

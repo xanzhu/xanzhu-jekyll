@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-NZ' }}">
+  {% if page.code == 503 %}
+  {% include 503.html %}
+  {% else %}
+  <head>
+    {%include posthead.html %}
+  </head>
+  <body>
+    <article class="markdown-body">
+        {{ content }}
+    </article>
+  </body>
+</html>
+{% endif %}
+
