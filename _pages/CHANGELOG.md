@@ -7,7 +7,7 @@ excerpt: Stay up to date with the latest updates from xanzhu.
 
 # What's New
 
-### October XX 2019 - 0.1.2
+### November 2nd 2019 - 0.1.2
 - We've redesigned our Changelog formatting layout.
 - Version control has also been reset to default formatting of X.X.X
 - Internal development has been vastly improved in providing a better way to release and work on future updates.
