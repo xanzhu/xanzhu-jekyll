@@ -16,18 +16,6 @@ sitemap: false
 - Our github name has undergone a change to better reflect xanzhu.
 - Fixed an issue with the maintenance service which allowed various urls to be accessed while activated.
 
-
-
-#### TO:DO 
-- Update CDN assets to support multicolored versions Black/White of the same file. Example external.svg > Display in black and white versions.
-- Update fonts again
-- Redesign 503 and 404 formatting to follow site with CDN or something completely different 404 css shouldn't be inlined.
-- Update package.json to reflect new username
-- Create a public repo for our site 
-- Run another audit/redesign for cdn network
-- Update CDN repos to follow better formatting
-- Work on branding (Colors, logos etc)
-
 ----
 
 ### October 17th 2019 - 0.1.1
