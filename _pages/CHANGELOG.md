@@ -3,16 +3,19 @@ layout: page
 permalink: changelog/
 title: xanzhu | changelog
 excerpt: Stay up to date with the latest updates from xanzhu. 
+sitemap: false
 ---
 
 # What's New
 
-### November 2nd 2019 - 0.1.2
+### November 14th 2019 - 0.1.2
 - We've redesigned our Changelog formatting layout.
-- Version control has also been reset to default formatting of X.X.X
+- Version control has been reset to default formatting.
 - Internal development has been vastly improved in providing a better way to release and work on future updates.
 - Added some new security protocals to ensure our content remains safe and secure.
-- Our github name has undergone a change to better reflect who we are or rather who I am. This is xanzhu.
+- Our github name has undergone a change to better reflect xanzhu.
+- Fixed an issue with the maintenance service which allowed various urls to be accessed while activated.
+
 
 
 #### TO:DO 
@@ -23,7 +26,6 @@ excerpt: Stay up to date with the latest updates from xanzhu.
 - Create a public repo for our site 
 - Run another audit/redesign for cdn network
 - Update CDN repos to follow better formatting
-- Update github profile pictures
 - Work on branding (Colors, logos etc)
 
 ----
