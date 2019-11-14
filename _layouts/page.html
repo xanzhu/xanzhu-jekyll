@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: 'en-NZ' }}">
-  {% if page.code == 503 %}
+  {% if page.code == 503 or site.code == 503 %}
   {% include 503.html %}
   {% else %}
   <head>
-    {%include posthead.html %}
+    {%include pagehead.html %}
   </head>
   <body>
     <article class="markdown-body">

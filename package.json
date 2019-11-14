@@ -1,6 +1,6 @@
 {
-  "name": "xdde",
-  "version": "0.1",
+  "name": "xanzhu-engine",
+  "version": "0.1.0",
   "description": "XanZhu Development and Deployment Engine",
   "main": "index.html",
   "scripts": {
@@ -13,13 +13,8 @@
     "package:reinstall": "rm -rf node_modules && yarn upgrade --save-dev",
     "package:update": "yarn install"
   },
-  "repository": "git+https://github.com/BhuZha/XZ.git",
-  "author": "BhuZha <34955679+BhuZha@users.noreply.github.com>",
+  "author": "xanzhu",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/BhuZha/XZ/issues"
-  },
-  "homepage": "https://github.com/BhuZha/XZ#readme",
   "devDependencies": {
     "surge": "^0.21.3"
   },

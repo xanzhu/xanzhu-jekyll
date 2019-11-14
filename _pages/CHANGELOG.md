@@ -1,60 +1,28 @@
 ---
 layout: page
 permalink: changelog/
-title: XANZHU CHANGLOG
-excerpt: Information about updates and changes towards xanzhu.com
+title: xanzhu | changelog
+excerpt: Stay up to date with the latest updates from xanzhu. 
+sitemap: false
 ---
 
-# XANZHU CHANGLOG
-Information about updates and changes towards xanzhu.com
-CDN changelog listed until we move that over to our subdomain directly. 
+# What's New
 
-## 0.4 - October 17th 2019
-### Added 
-- CircleCI support
-- Yarn for internal developement
-
-### Changed
-- Package manager, now using Yarn instead of npm
-
-### Fixed
-- Fixed a deployment issue which would build on all branches.
-
-### Deprecated
-- TravisCI support
-- npm package manager
-
-## 0.3 - October 10th 2019
-### Added
-- Markdown support (Beta)
-- New _pages directory within jekyll
-- Default Jekyll markdown settings to config.yml (Testing)
-- New head file for posts (Pages)
-- More internal scripts for xdde to make things easier
-
-### Fixed
-- Fixed favicon url 
+### November 14th 2019 - 0.1.2
+- We've redesigned our Changelog formatting layout.
+- Version control has been reset to default formatting.
+- Internal development has been vastly improved in providing a better way to release and work on future updates.
+- Added some new security protocals to ensure our content remains safe and secure.
+- Our github name has undergone a change to better reflect xanzhu.
+- Fixed an issue with the maintenance service which allowed various urls to be accessed while activated.
 
 ----
 
-# CDN Network
+### October 17th 2019 - 0.1.1
+- Major improvement towards build and deploy performance as we switched to a new providers.
+- Improved security for our CDN network
 
-## 1019.2 - October 8th 2019
-### Security
-- Externally hosted files are now in their own directory. This prevents the entire directory being leaked when scanning the domain. 
-
-### Changed
-- Cleaned up website design formatting to follow a darker theme
-- Changed d2 > A2 in terms of the directory
-
-### Added
-- New Banner logo
-- Internal directory to host all assets used internally
-
-### Fixed
-- Cache system, now correctly caches all the new files in the directory. Allowing us to purge cache from the domain without effecting A2 directory
-- All urls which used the old d2 directory. 
-
-----
-
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+### October 10th 2019 - 0.1.0
+- First release of our changelog page.
+- Minor improvements for our internal engine.
+- Fixed issues with our CDN network which failed to display our assets
