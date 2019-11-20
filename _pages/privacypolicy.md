@@ -3,6 +3,7 @@ layout: default
 permalink: /privacy-policy/
 title: xanzhu | privacy policy
 sitemap: false
+code: 
 ---
 
 <h1>Privacy Policy</h1>

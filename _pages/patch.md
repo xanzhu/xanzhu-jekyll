@@ -4,9 +4,13 @@ permalink: changelog/
 title: xanzhu | changelog
 excerpt: Stay up to date with the latest updates from xanzhu. 
 sitemap: false
+code: 503-ok
 ---
 
 # What's New
+
+### November 20th 2019 - 0.1.3
+- Security updates 
 
 ### November 14th 2019 - 0.1.2
 - We've redesigned our Changelog formatting layout.
