@@ -1,9 +1,9 @@
 ---
-layout: default
+layout: page
 permalink: /privacy-policy/
 title: xanzhu | privacy policy
 sitemap: false
-code: 
+code: 4
 ---
 
 <h1>Privacy Policy</h1>

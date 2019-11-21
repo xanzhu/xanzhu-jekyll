@@ -1,9 +1,10 @@
+{% if page.code != 4 %}
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="shortcut icon" href="https://cdn.xanzhu.com/A2/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="{{ '/assets/css/app.css' | relative_url }}">
-  <link href="https://fonts.googleapis.com/css?family=Khula:600|Open+Sans:300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Khula:600|Open+Sans:400&display=swap" rel="stylesheet">
   <title>xanzhu | maintenance</title>
 </head>
 <body>
@@ -13,12 +14,13 @@
   <h1>Website is under maintenance.</h1>
   <p>xanzhu is currently being developed, check back soon.
     <br>This page will constantly change and update as we refine our code.</p>
-  <p>The accountant toasts her uneasy python on top of the sample. The exercise bores near the cool center. The design bites the ashamed analyst outside the conscience. When will the sacked undesirable fast? Does the beaten pedestrian pin a bobs tax?</p>
-  <p class="ptest">The accountant toasts her uneasy python on top of the sample. The exercise bores near the cool center. The design bites the ashamed analyst outside the conscience. When will the sacked undesirable fast? Does the beaten pedestrian pin a bobs tax?</p>
-  <p class="ptest2">The accountant toasts her uneasy python on top of the sample. The exercise bores near the cool center. The design bites the ashamed analyst outside the conscience. When will the sacked undesirable fast? Does the beaten pedestrian pin a bobs tax?</p>
   <p>Any bugs or feedback please send an email to <a href="mailto:feedback@xanzhu.com">feedback@xanzhu.com</a></p>
   <img class="logo" src="https://cdn.xanzhu.com/A2/brand.svg" alt="xanzhu logo">
 </div>
 </body>
 </html>
-{{break}}
+{% if page.code == 4 %}
+{% else %}
+{% break %}
+{% endif %}
+{% endif%}
