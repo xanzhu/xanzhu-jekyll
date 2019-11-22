@@ -4,13 +4,17 @@ permalink: changelog/
 title: xanzhu | changelog
 excerpt: Stay up to date with the latest updates from xanzhu. 
 sitemap: false
-code: 111
+code: 4
 ---
 
 # What's New
 
 ### November 20th 2019 - 0.1.3
-- Security updates 
+- Added support for pages to be viewed when maintenance is active. 
+- Security updates for vendor files.
+- Updated font making it easier to read on all devices. 
+
+
 
 ### November 14th 2019 - 0.1.2
 - We've redesigned our Changelog formatting layout.
