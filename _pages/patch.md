@@ -7,6 +7,8 @@ sitemap: false
 code: 4
 ---
 
+{% include header.html %}
+
 # What's New
 
 ### November 20th 2019 - 0.1.3
