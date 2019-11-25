@@ -11,11 +11,12 @@ code: 4
 
 # What's New
 
-### November 20th 2019 - 0.1.3
+### November 2019 - 0.1.3
 - Added support for pages to be viewed when maintenance is active. 
 - Security updates for vendor files.
 - Updated font making it easier to read on all devices. 
-
+- Updated Favicon now smaller!
+- 
 
 
 ### November 14th 2019 - 0.1.2
