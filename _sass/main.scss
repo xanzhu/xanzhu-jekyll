@@ -201,7 +201,7 @@ a[href^="https://"], a[href^="mailto"] {
             &:last-child {
                 margin-right: 0;
             }
-            &>a {
+            &>a, p {
                 display: inline-block;
                 font-size: 16px;
                 letter-spacing: 1px;

@@ -1,12 +1,12 @@
 <header class="x-header">
     <div class="x-logo">
-        <a href="{{ ' / ' | relative_url }}" aria-label="Return to homepage"><img class="x-logo" src="https://cdn.xanzhu.com/A2/brand-light.svg"></a>
+        <a href="{{ '/' | relative_url }}"><img class="x-logo" src="https://cdn.xanzhu.com/A2/brand-light.svg" aria-label="Return home"></a>
     </div>
-    <img class="x-menu" src="https://cdn.xanzhu.com/A2/light-menu.svg">
+    <img class="x-menu" src="https://cdn.xanzhu.com/A2/light-menu.svg" aria-label="menu icon">
     <nav class="x-nav">
         <ul class="x-ul">
             {% if site.code == 503 or page.code == 503 and page.code != undefined %}
-            <li class="x-li"><a>MAINTENANCE</a></li> 
+            <li class="x-li"><p>MAINTENANCE</p></li> 
             {%else %}
             {% if site.nav %}
             {% for i in site.nav %}
