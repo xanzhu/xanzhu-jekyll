@@ -1,12 +1,23 @@
 ---
-layout: page
+layout: default
 permalink: changelog/
 title: xanzhu | changelog
 excerpt: Stay up to date with the latest updates from xanzhu. 
 sitemap: false
+code: 4
 ---
 
 # What's New
+
+### November 28th 2019 - 0.1.3
+- Added support to display pages when maintenance is active.
+- Added a fancy new header bar. 
+- Security updates for vendor files.
+- Increased the font weight making it easier to read on all devices. 
+- Improved our sites favicon, now being much smaller. 
+- Improved design across the entire domain for maintenance mode. 
+
+
 
 ### November 14th 2019 - 0.1.2
 - We've redesigned our Changelog formatting layout.

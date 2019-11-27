@@ -1,0 +1,145 @@
+.x-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 16px 0;
+    background-color: black;
+    transition: all .6;
+    height: 4.5rem;
+    z-index: 1000;
+    padding-bottom: 20px;
+    .x-logo {
+        float: left;
+        height: 145px;
+        background-size: 100% 100%;
+        
+        a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        img {
+            margin-top: -50px;
+            margin-left: 1.1em;
+        }
+    }
+    .x-menu {
+        display: none;
+        width: 39px;
+        position: absolute;
+        right: 0;
+        padding: 8px;
+        margin-right: 1.1em;
+        z-index: -2;
+    }
+
+    .x-nav {
+        float: right;
+        margin-right: 1.1em;
+        &>ul>li {
+            float: left;
+            &:last-child {
+                margin-right: 0;
+            }
+            &>a {
+                display: inline-block;
+                font-size: 16px;
+                letter-spacing: 1px;
+                padding: 0 12px;
+                text-decoration: none;
+                font-family: 'Khula', sans-serif;
+                font-weight: 700;
+                color: white;
+                vertical-align: middle;
+                line-height: 45px;
+            }
+            &>a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 695px) {
+    .x-header {
+        position: absolute;
+        top: 0;
+        padding: 28px 0;
+        .x-menu {
+            display: block;
+        }
+        .x-nav {
+            position: relative;
+            top: 40px;
+            right: 1%;
+            display: none;
+            width: 120px;
+            border-radius: 2px;
+            &>ul>li{
+                float: none;
+                height: auto;
+                line-height: middle;
+                margin-right: 0;
+                &>a {
+                    display: block;
+                    padding: 16px 0;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .x-header .x-menu {
+        margin: 0 4px;
+        margin-right: 1.1em;
+        margin-top: 6px;
+        vertical-align: middle;
+        line-height: 45px;
+    }
+    
+    .x-header {
+        padding: 14px 0;
+    }
+}
+
+
+/* Code from main.scss for 503 formatting? 
+h1 {
+    margin: 0 0 5px;
+    font-size: 60px;
+    line-height: 1em;
+    color: #252427;
+    font-family: 'Khula', sans-serif;
+    font-weight: 400;
+}
+
+
+h3 {
+    margin: 0px 15px 0;
+    display: inline-block;
+    font-family: 'Khula', sans-serif;
+}
+
+p {
+    font-size: 16px;
+    margin: 1em 0;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 400;
+}
+
+.d1 { // SVG on main page formatting
+    height: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+*/

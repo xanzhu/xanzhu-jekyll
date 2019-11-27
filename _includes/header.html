@@ -1,1 +1,23 @@
-<!--Navigation, logo here-->
+<header class="x-header">
+    <div class="x-logo">
+        <a href="{{ '/' | relative_url }}"><img class="x-logo" src="https://cdn.xanzhu.com/A2/brand-light.svg" alt="Return home"></a>
+    </div>
+    <img class="x-menu" src="https://cdn.xanzhu.com/A2/light-menu.svg" alt="menu icon">
+    <nav class="x-nav">
+        <ul class="x-ul">
+            {% if site.code == 503 or page.code == 503 and page.code != undefined %}
+            <li class="x-li"><p>MAINTENANCE</p></li> 
+            {%else %}
+            {% if site.nav %}
+            {% for i in site.nav %}
+            <li><a href="{{ i[1] | relative_url }}">{{ i[0] }}</a></li>
+            {% endfor %}
+            {% else %}
+            <li class="x-li"><a href="{{'/changelog/' | relative_url }}">Changelog</a></li>
+            <li class="x-li"><a href="{{'/changelog/' | relative_url }}">News</a></li>
+            <li class="x-li"><a href="{{'/changelog/' | relative_url }}">Store</a></li>
+            {% endif %}
+            {% endif %}
+        </ul>
+    </nav>
+</header>

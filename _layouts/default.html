@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: 'en-NZ' }}">
-  {% if page.code == 503 or site.code == 503 %}
+  {% if site.code == 503 or page.code == 503 and page.code != undefined %}
   {% include 503.html %}
-  {% else %}
+  {% endif %}
   <head>
     {%include head.html %}
   </head>
-  <body>
-    <a name="top"></a>
-    <article class="markdown-body">
-        {{ content}}
-      <a href="#top" class="btp"><img src="https://cdn.xanzhu.com/A2/backtotop.svg"></a>
+<body>
+  {% include header.html %}
+    <article class="container">
+      {{ content}}
     </article>
-
-    
-  </body>
+</body>
 </html>
-{% endif %}
