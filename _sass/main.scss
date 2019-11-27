@@ -9,14 +9,6 @@ body {
     margin: 0 auto;
 }
 
-.d1 {
-    height: 30px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
 a[href^="https://"], a[href^="mailto"] {
     background: url("https://cdn.xanzhu.com/A2/external.svg") center right no-repeat;
     padding-right: 12px;
@@ -225,6 +217,11 @@ a[href^="https://"], a[href^="mailto"] {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+
+hr {
+  margin-top: 1.25em;
+  border-top: 2px solid black;
 }
 
 @media screen and (max-width: 695px) {
