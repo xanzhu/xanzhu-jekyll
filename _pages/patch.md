@@ -9,6 +9,9 @@ code: 4
 
 # What's New
 
+### December - 0.1.4
+- Mobile support for viewing any page on our domain. 
+
 ### November 28th 2019 - 0.1.3
 - Added support to display pages when maintenance is active.
 - Added a fancy new header bar. 
