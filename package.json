@@ -6,8 +6,8 @@
   "scripts": {
     "build:server": "bundle exec jekyll server",
     "build": "bundle exec jekyll build",
-    "deploy": "surge --project ./_site --domain xanzhu.com",
-    "deploy:teardown": "surge teardown xanzhu.com",
+    "deploy": "surge --project ./_site --domain jekyll.xanzhu.com",
+    "deploy:teardown": "surge teardown jekyll.xanzhu.com",
     "update:vendor": "bundle check --path=vendor/bundle || bundle install --path=vendor/bundle",
     "clean": "bundle exec jekyll clean",
     "package:reinstall": "rm -rf node_modules && yarn upgrade --save-dev",
